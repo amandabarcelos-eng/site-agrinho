@@ -2,69 +2,59 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, sans-serif;
-    line-height: 1.6;
-    background: #f0f7f0;
-    color: #222;
+    background: #e8f5e9;
+    color: #1b5e20;
 }
 
-.navbar {
-    background: #228B22;
+header {
+    background: #2e7d32;
+    color: white;
     padding: 1rem 5%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     position: fixed;
     width: 100%;
     top: 0;
-    z-index: 1000;
-    color: white;
 }
 
-.logo { font-size: 1.8rem; font-weight: bold; }
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-.navbar ul {
+h1 { font-size: 2.2rem; }
+
+ul {
     display: flex;
     list-style: none;
-    gap: 1.5rem;
+    gap: 2rem;
 }
 
-.navbar a { color: white; text-decoration: none; }
+a { color: white; text-decoration: none; font-weight: bold; }
 
-.hero {
-    height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://picsum.photos/id/1015/1920/1080') center/cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+#hero {
+    margin-top: 80px;
+    padding: 120px 5%;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://picsum.photos/id/1015/1920/1080') center/cover;
+    color: white;
     text-align: center;
-    color: white;
-    margin-top: 70px;
-}
-
-.btn {
-    margin-top: 20px;
-    padding: 15px 30px;
-    background: #32CD32;
-    color: white;
-    border: none;
-    border-radius: 50px;
-    font-size: 1.2rem;
-    cursor: pointer;
 }
 
 .cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
     padding: 40px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .card {
-    background: #2E8B57;
+    background: #4caf50;
     color: white;
-    padding: 30px;
-    border-radius: 12px;
+    padding: 35px 20px;
+    border-radius: 15px;
     text-align: center;
     font-size: 1.4rem;
 }
@@ -72,26 +62,34 @@ body {
 .simulator {
     max-width: 700px;
     margin: 40px auto;
-    padding: 30px;
+    padding: 40px;
     background: white;
     border-radius: 15px;
     box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    text-align: center;
 }
 
 .simulator label {
     display: block;
-    margin: 15px 0 5px;
+    margin: 20px 0 8px;
     font-weight: bold;
 }
 
-.simulator input[type="range"] {
-    width: 100%;
+button {
+    margin-top: 20px;
+    padding: 15px 40px;
+    background: #2e7d32;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    cursor: pointer;
 }
 
 footer {
     text-align: center;
-    padding: 30px;
-    background: #1a5f1a;
+    padding: 40px;
+    background: #1b5e20;
     color: white;
     margin-top: 50px;
 }
