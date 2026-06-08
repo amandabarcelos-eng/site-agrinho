@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Forte | Equilíbrio Sustentável</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">🌱 Agro Forte</div>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#praticas">Práticas</a></li>
+                <li><a href="#simulador">Simulador</a></li>
+                <li><a href="#quiz">Quiz</a></li>
+            </ul>
+            <button id="theme-toggle">🌙</button>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>Agro Forte, Futuro Sustentável</h1>
+        <p>Equilíbrio entre produção agrícola e preservação do meio ambiente</p>
+        <a href="#simulador" class="btn">Testar o Simulador</a>
+    </section>
+
+    <section id="sobre">
+        <h2>Sobre o Tema</h2>
+        <p>O Paraná é um dos maiores produtores agrícolas do Brasil. Mas como garantir que essa produção seja forte e ao mesmo tempo sustentável?</p>
+    </section>
+
+    <section id="praticas">
+        <h2>Práticas Sustentáveis</h2>
+        <div class="cards">
+            <div class="card">🌾 Rotação de Culturas</div>
+            <div class="card">💧 Irrigação Eficiente</div>
+            <div class="card">🐝 Polinização e Biodiversidade</div>
+            <div class="card">♻️ Uso de Bioinsumos</div>
+        </div>
+    </section>
+
+    <section id="simulador">
+        <h2>Simulador de Fazenda Sustentável</h2>
+        <div class="simulator">
+            <label>Produção (0-100):</label>
+            <input type="range" id="producao" min="0" max="100" value="50">
+            <span id="val-producao">50</span>
+
+            <label>Uso de Água (0-100):</label>
+            <input type="range" id="agua" min="0" max="100" value="50">
+            <span id="val-agua">50</span>
+
+            <label>Pesticidas (0-100):</label>
+            <input type="range" id="pesticidas" min="0" max="100" value="30">
+            <span id="val-pesticidas">30</span>
+
+            <button onclick="calcularImpacto()">Calcular Impacto</button>
+            <div id="resultado"></div>
+        </div>
+    </section>
+
+    <section id="quiz">
+        <h2>Você é um produtor sustentável?</h2>
+        <button onclick="iniciarQuiz()">Iniciar Quiz</button>
+        <div id="quiz-container"></div>
+    </section>
+
+    <footer>
+        <p>Projeto desenvolvido para o Concurso Agrinho 2026 - Categoria Programação</p>
+        <p>Aluno: [SEU NOME] • 1º ano do Ensino Médio</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
